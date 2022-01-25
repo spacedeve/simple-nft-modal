@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+}
+
+img {
+  width: 100%;
+}
+
+.horizontal__line {
+  border-top: 1px solid #3e4e65;
+}
+
+.card {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  justify-items: center;
+}
+
+.card__box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 340px;
+  padding: 24px;
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.img__wrap {
+  border-radius: 10px;
+  background-color: rgba(0, 255, 247, 0.5);
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.card__img {
+  border-radius: 10px;
+}
+
+.card__img:hover,
+.img__wrap:hover .card__img {
+  opacity: .5;
+}
+
+.card__title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card__title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.card__desc {
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__amount {
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(178, 100%, 50%);
+  padding-left: 18px;
+  position: relative;
+}
+
+.card__amount::before {
+  content: '';
+  background-image: url(../images/icon-ethereum.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 11px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+}
+
+.card__timer {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  position: relative;
+}
+
+.card__timer::before {
+  content: '';
+  background-image: url(../images/icon-clock.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: -24px;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.card__author-image {
+  width: 10%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.card__author-name {
+  color: hsl(215, 51%, 70%);
+}
+
+.card__author-name a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card__author-name a:hover {
+  color: hsl(178, 100%, 50%);
+}
