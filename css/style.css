@@ -47,6 +47,7 @@ img {
 
 .card__img {
   border-radius: 10px;
+  transition: all .3s ease-in-out;
 }
 
 .card__img:hover,
@@ -58,6 +59,7 @@ img {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
+  transition: all .3s ease-in-out;
 }
 
 .card__title:hover {
@@ -137,6 +139,7 @@ img {
 .card__author-name a {
   text-decoration: none;
   color: #fff;
+  transition: all .3s ease-in-out;
 }
 
 .card__author-name a:hover {
